@@ -4,4 +4,6 @@ resource "google_storage_bucket" "test" {
   project       = "development-env-ta"
   storage_class = "REGIONAL"
   force_destroy = true
+
+  nonexistent_property = "fail"
 }
